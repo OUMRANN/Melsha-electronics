@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Melsha Electronics | Smart Technology. Better Living. | Addis Ababa &amp; Dessie</title>
+<meta name="description" content="Melsha Electronics: Ethiopia's premium electronics and home appliance retailer. Refrigerators, washing machines, TVs, air conditioners and more. Stores in Jemo, Piyasa (Eliana Mall) and Dessie.">
+<meta name="keywords" content="electronics Addis Ababa, home appliances Ethiopia, refrigerators, washing machines, televisions, Melsha Electronics, Jemo, Piyasa, Dessie">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Melsha Electronics | Smart Technology. Better Living.">
+<meta property="og:description" content="Trusted electronics and home appliances from the world's leading brands.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ElectronicsStore","name":"Melsha Electronics","slogan":"Smart Technology. Better Living.","telephone":"+251907353535","sameAs":["https://www.tiktok.com/@melsha_electronics_"],"department":[{"@type":"ElectronicsStore","name":"Melsha Electronics Jemo","address":{"@type":"PostalAddress","streetAddress":"Besides Sisters Cafe, Jemo","addressLocality":"Addis Ababa","addressCountry":"ET"}},{"@type":"ElectronicsStore","name":"Melsha Electronics Piyasa","address":{"@type":"PostalAddress","streetAddress":"Eliana Mall, Piyasa","addressLocality":"Addis Ababa","addressCountry":"ET"}},{"@type":"ElectronicsStore","name":"Melsha Electronics Dessie","address":{"@type":"PostalAddress","addressLocality":"Dessie","addressCountry":"ET"}}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{volt:'#0066FF'},fontFamily:{sans:['Inter','sans-serif'],display:['Poppins','sans-serif']}}}}</script>
+<style>
+:root{--volt:#0066FF}
+html{background:#000}
+body{font-family:Inter,sans-serif;background:#000;color:#fff;overflow-x:hidden}
+h1,h2,h3,.font-display{font-family:Poppins,sans-serif}
+::selection{background:#0066FF;color:#fff}
+.glass{background:rgba(255,255,255,.06);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.14)}
+.btext{background:linear-gradient(120deg,#fff 20%,#0066FF 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pic{position:relative;overflow:hidden;background:radial-gradient(circle at 30% 20%,rgba(0,102,255,.4),#000 72%)}
+.pic svg.fb{position:absolute;inset:0;margin:auto;width:26%;opacity:.55}
+.pic img{position:relative;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.card{transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s,border-color .5s;border:1px solid rgba(255,255,255,.12);background:#000}
+.card:hover{transform:translateY(-8px);border-color:#0066FF;box-shadow:0 30px 60px -20px rgba(0,102,255,.55)}
+.card:hover .pic img{transform:scale(1.08)}
+.btn{transition:transform .3s,box-shadow .3s,background .3s,color .3s,border-color .3s;font-weight:500;font-size:.875rem}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px -8px rgba(0,102,255,.8)}
+.btn-blue{background:#0066FF;color:#fff}
+.btn-line{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn-line:hover{border-color:#0066FF;background:rgba(0,102,255,.15)}
+.btn-white{background:#fff;color:#000}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.glow{position:absolute;border-radius:9999px;filter:blur(100px);background:#0066FF;opacity:.35;pointer-events:none}
+.brand span{color:rgba(255,255,255,.5);transition:.4s;filter:grayscale(1)}
+.brand:hover span{color:#0066FF;filter:none}
+#loader{position:fixed;inset:0;z-index:100;background:#000;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px;transition:opacity .7s,visibility .7s;animation:autohide .5s ease 3.5s forwards}
+#loader.done{opacity:0;visibility:hidden}
+@keyframes autohide{to{opacity:0;visibility:hidden}}
+.lbar{width:170px;height:2px;background:rgba(255,255,255,.15);overflow:hidden;border-radius:2px}
+.lbar i{display:block;height:100%;width:100%;background:#0066FF;box-shadow:0 0 12px #0066FF;transform:translateX(-100%);animation:fill 3s ease-in-out forwards}
+@keyframes fill{to{transform:none}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.floaty{animation:floaty 6s ease-in-out infinite}
+.inup{animation:inup 1.2s cubic-bezier(.2,.7,.2,1) both}
+@keyframes inup{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:none}}
+:focus-visible{outline:2px solid #0066FF;outline-offset:3px}
+input,select,textarea{background:#000;border:1px solid rgba(255,255,255,.25);color:#fff;transition:border-color .3s,box-shadow .3s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#0066FF;box-shadow:0 0 0 3px rgba(0,102,255,.25)}
+::placeholder{color:rgba(255,255,255,.4)}
+#slides{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+dialog{background:#000;color:#fff;border:1px solid #0066FF;max-width:min(92vw,860px);width:100%;padding:0;border-radius:1.5rem;box-shadow:0 0 90px rgba(0,102,255,.4);overflow:hidden}
+dialog::backdrop{background:rgba(0,0,0,.85);backdrop-filter:blur(6px)}
+.chip{transition:.3s}.chip:hover{border-color:#0066FF;color:#0066FF}
+.tab[aria-selected=true]{background:#0066FF;border-color:#0066FF}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="loader" aria-hidden="true">
+<div class="font-display text-3xl font-bold tracking-tight">Melsha<span class="text-volt">.</span> <span class="font-light text-white/70">Electronics</span></div>
+<div class="lbar"><i></i></div>
+</div>
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[200] bg-white text-black px-4 py-2 rounded">Skip to content</a>
+
+<!-- NAV -->
+<header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+<nav class="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between" aria-label="Main">
+<a href="#home" class="font-display font-bold text-xl tracking-tight">Melsha<span class="text-volt">.</span><span class="font-light text-white/70 ml-1.5">Electronics</span></a>
+<ul class="hidden xl:flex items-center gap-7 text-sm text-white/80">
+<li><a class="hover:text-white" href="#home">Home</a></li>
+<li><a class="hover:text-white" href="#products">Products</a></li>
+<li><a class="hover:text-white" href="#categories">Categories</a></li>
+<li><a class="hover:text-white" href="#brands">Brands</a></li>
+<li><a class="hover:text-white" href="#about">About</a></li>
+<li><a class="hover:text-white" href="#reviews">Reviews</a></li>
+<li><a class="hover:text-white" href="#contact">Contact</a></li>
+</ul>
+<div class="hidden xl:flex items-center gap-2">
+<a href="tel:+251907353535" class="btn btn-line px-4 py-2.5 rounded-full">Call Now</a>
+<a href="https://wa.me/251907353535?text=Hello%20Melsha%20Electronics%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn btn-line px-4 py-2.5 rounded-full">WhatsApp</a>
+<a href="#locations" class="btn btn-blue px-5 py-2.5 rounded-full">Visit Store</a>
+</div>
+<button id="burger" class="xl:hidden p-2" aria-label="Open menu" aria-expanded="false" aria-controls="mobile"><svg width="26" height="26" fill="none" stroke="#fff" stroke-width="1.8"><path d="M3 8h20M3 18h20"/></svg></button>
+</nav>
+<div id="mobile" class="hidden xl:hidden bg-black border-t border-white/10 px-6 py-6">
+<ul class="space-y-4 text-lg"><li><a href="#home">Home</a></li><li><a href="#products">Products</a></li><li><a href="#categories">Categories</a></li><li><a href="#brands">Brands</a></li><li><a href="#about">About</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul>
+<div class="grid grid-cols-3 gap-2 mt-6 text-center">
+<a href="tel:+251907353535" class="btn btn-line py-3 rounded-full">Call Now</a>
+<a href="https://wa.me/251907353535" target="_blank" rel="noopener" class="btn btn-line py-3 rounded-full">WhatsApp</a>
+<a href="#locations" class="btn btn-blue py-3 rounded-full">Visit Store</a>
+</div>
+</div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section id="home" class="relative min-h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0" data-parallax="0.15"><div class="pic absolute inset-0"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=2400&q=85" alt="Modern luxury home with premium appliances and a large TV" class="h-[120%]" fetchpriority="high" onerror="this.remove()"></div></div>
+<div class="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/30"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50"></div>
+<div class="glow w-[460px] h-[460px] -right-24 top-20"></div>
+<div class="relative max-w-7xl mx-auto px-5 lg:px-8 pt-28 pb-20 grid lg:grid-cols-2 gap-12 items-center w-full">
+<div>
+<p class="inup glass inline-block px-4 py-1.5 rounded-full text-xs text-white/80 mb-6" style="animation-delay:.1s">Smart Technology. Better Living.</p>
+<h1 class="inup text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight" style="animation-delay:.25s">Ethiopia's Premium Electronics Destination</h1>
+<p class="inup mt-6 text-lg text-white/70 max-w-xl" style="animation-delay:.45s">Discover trusted electronics and home appliances from the world's leading brands.</p>
+<div class="inup mt-9 flex flex-wrap gap-3" style="animation-delay:.65s">
+<a href="#products" class="btn btn-blue px-7 py-4 rounded-full">Explore Products</a>
+<a href="https://wa.me/251907353535?text=Hello%20Melsha%20Electronics%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn btn-line px-7 py-4 rounded-full">Chat on WhatsApp</a>
+<a href="#locations" class="btn btn-line px-7 py-4 rounded-full">Visit Store</a>
+</div>
+</div>
+<div class="hidden lg:block relative h-[470px]" data-parallax="-0.08" aria-hidden="true">
+<div class="glass rounded-3xl p-5 w-64 absolute top-0 right-6 floaty"><p class="text-xs text-white/60">Televisions</p><p class="font-display font-semibold mt-1">4K Smart TV</p><p class="text-xs text-volt mt-2">Cinema picture · Streaming apps</p></div>
+<div class="glass rounded-3xl p-5 w-64 absolute top-44 left-0 floaty" style="animation-delay:-2s"><p class="text-xs text-white/60">Refrigerators</p><p class="font-display font-semibold mt-1">Smart Inverter Fridge</p><p class="text-xs text-volt mt-2">Energy saving · No frost</p></div>
+<div class="glass rounded-3xl p-5 w-64 absolute bottom-0 right-0 floaty" style="animation-delay:-4s"><p class="text-xs text-white/60">Washing Machines</p><p class="font-display font-semibold mt-1">Front Load 9kg</p><p class="text-xs text-volt mt-2">Steam wash · Quiet motor</p></div>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="bg-black border-y border-white/10">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 py-16 grid grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+<div class="reveal"><p class="font-display text-4xl lg:text-5xl font-bold"><span data-count="10000">0</span><span class="text-volt">+</span></p><p class="mt-2 text-white/60 text-sm">Happy Customers</p></div>
+<div class="reveal"><p class="font-display text-4xl lg:text-5xl font-bold"><span data-count="1000">0</span><span class="text-volt">+</span></p><p class="mt-2 text-white/60 text-sm">Products</p></div>
+<div class="reveal"><p class="font-display text-4xl lg:text-5xl font-bold"><span data-count="50">0</span><span class="text-volt">+</span></p><p class="mt-2 text-white/60 text-sm">Trusted Brands</p></div>
+<div class="reveal"><p class="font-display text-4xl lg:text-5xl font-bold"><span data-count="10">0</span><span class="text-volt">+</span></p><p class="mt-2 text-white/60 text-sm">Years of Service</p></div>
+</div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section id="products" class="relative bg-black py-24 lg:py-32 overflow-hidden">
+<div class="glow w-[500px] h-[500px] -left-48 top-10 opacity-20"></div>
+<div class="max-w-7xl mx-auto px-5 lg:px-8 relative">
+<div class="max-w-2xl reveal"><p class="text-volt text-sm font-medium">Featured Products</p><h2 class="mt-3 text-3xl lg:text-5xl font-bold tracking-tight">Technology built for everyday life</h2></div>
+<div id="feat" class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-7"></div>
+</div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="bg-black py-24 lg:py-32 border-t border-white/10">
+<div class="max-w-7xl mx-auto px-5 lg:px-8">
+<div class="max-w-2xl reveal"><p class="text-volt text-sm font-medium">Categories</p><h2 class="mt-3 text-3xl lg:text-5xl font-bold tracking-tight">Everything for a smarter home</h2></div>
+<div id="cats" class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+<p class="mt-14 text-white/60 text-sm reveal">Also available in store</p>
+<div id="chips" class="mt-4 flex flex-wrap gap-3 reveal"></div>
+</div>
+</section>
+
+<!-- BRANDS -->
+<section id="brands" class="bg-black py-24 border-t border-white/10">
+<div class="max-w-7xl mx-auto px-5 lg:px-8">
+<div class="max-w-2xl reveal"><p class="text-volt text-sm font-medium">Brands</p><h2 class="mt-3 text-3xl lg:text-5xl font-bold tracking-tight">World-leading names, one store</h2></div>
+<div id="brandGrid" class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4"></div>
+</div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="relative bg-black py-24 lg:py-32 overflow-hidden border-t border-white/10">
+<div class="glow w-[480px] h-[480px] right-0 bottom-0 opacity-25"></div>
+<div class="max-w-7xl mx-auto px-5 lg:px-8 relative">
+<div class="max-w-2xl reveal"><p class="text-volt text-sm font-medium">Why Melsha</p><h2 class="mt-3 text-3xl lg:text-5xl font-bold tracking-tight">Why choose Melsha Electronics</h2></div>
+<div id="whyGrid" class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-black border-t border-white/10">
+<div class="grid lg:grid-cols-2">
+<div class="pic min-h-[340px] lg:min-h-[620px]"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1600&q=85" alt="Modern electronics showroom with televisions" loading="lazy" onerror="this.remove()"></div>
+<div class="px-6 lg:px-16 py-16 lg:py-24 flex flex-col justify-center reveal">
+<p class="text-volt text-sm font-medium">About Melsha Electronics</p>
+<h2 class="mt-3 text-3xl lg:text-5xl font-bold tracking-tight">Smart technology. Better living.</h2>
+<p class="mt-6 text-white/70 leading-relaxed">Melsha Electronics brings genuine electronics and home appliances from leading global brands to families and businesses across Ethiopia, with stores in Jemo, Piyasa and Dessie and real support after every sale.</p>
+<a href="https://wa.me/251907353535?text=Hello%20Melsha%20Electronics%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn btn-blue self-start mt-8 px-8 py-4 rounded-full">Chat on WhatsApp</a>
+</div>
+</div>
+</section>
+
+<!-- LOCATIONS -->
+<section id="locations" class="bg-black py-24 lg:py-32 border-t border-white/10">
+<div class="max-w-7xl mx-auto px-5 lg:px-8">
+<div class="max-w-2xl reveal"><p class="text-volt text-sm font-medium">Store Locations</p><h2 class="mt-3 text-3xl lg:text-5xl font-bold tracking-tight">Visit a Melsha store</h2></div>
+<div role="tablist" aria-label="Store locations" id="locTabs" class="mt-10 flex flex-wrap gap-3"></div>
+<div class="mt-8 grid lg:grid-cols-5 gap-6">
+<div id="locCard" class="lg:col-span-2 glass rounded-3xl p-8 flex flex-col"></div>
+<div class="lg:col-span-3 rounded-3xl overflow-hidden border border-white/15 min-h-[380px]"><iframe id="locMap" title="Store map" class="w-full h-full min-h-[380px]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div>
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="bg-black py-24 lg:py-32 border-t border-white/10">
+<div class="max-w-4xl mx-auto px-5 lg:px-8">
+<div class="text-center reveal"><p class="text-volt text-sm font-medium">Reviews</p><h2 class="mt-3 text-3xl lg:text-5xl font-bold tracking-tight">What our customers say</h2></div>
+<div class="mt-14 overflow-hidden glass rounded-3xl" role="region" aria-roledescription="carousel" aria-label="Customer reviews"><div id="slides" class="flex" aria-live="polite"></div></div>
+<div class="flex justify-center items-center gap-4 mt-8">
+<button id="prev" class="w-11 h-11 rounded-full glass hover:border-volt" aria-label="Previous review">&larr;</button>
+<div id="dots" class="flex gap-2"></div>
+<button id="next" class="w-11 h-11 rounded-full glass hover:border-volt" aria-label="Next review">&rarr;</button>
+</div>
+</div>
+</section>
+
+<!-- TIKTOK -->
+<section id="tiktok" class="relative bg-black py-24 lg:py-32 border-t border-white/10 overflow-hidden">
+<div class="glow w-[420px] h-[420px] left-1/2 -translate-x-1/2 -top-40 opacity-30"></div>
+<div class="max-w-6xl mx-auto px-5 lg:px-8 relative">
+<div class="text-center reveal"><p class="text-volt text-sm font-medium">TikTok</p><h2 class="mt-3 text-3xl lg:text-5xl font-bold tracking-tight">Follow Melsha on TikTok</h2></div>
+<div class="mt-14 grid lg:grid-cols-3 gap-6">
+<div class="glass rounded-3xl p-8 text-center reveal">
+<div class="w-20 h-20 mx-auto rounded-full bg-volt grid place-items-center font-display font-bold text-3xl">M</div>
+<h3 class="mt-5 text-xl font-semibold">Melsha Electronics</h3>
+<p class="text-white/60 text-sm">@melsha_electronics_</p>
+<div class="grid grid-cols-3 gap-2 mt-6 text-center">
+<div><p class="font-display font-bold text-lg">10,000+</p><p class="text-xs text-white/50">Customers</p></div>
+<div><p class="font-display font-bold text-lg">3</p><p class="text-xs text-white/50">Stores</p></div>
+<div><p class="font-display font-bold text-lg">10+</p><p class="text-xs text-white/50">Years</p></div>
+</div>
+<a href="https://www.tiktok.com/@melsha_electronics_" target="_blank" rel="noopener" class="btn btn-blue inline-block mt-7 px-8 py-3.5 rounded-full">Follow on TikTok</a>
+</div>
+<div class="lg:col-span-2 grid sm:grid-cols-3 gap-4" id="vids"></div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="relative bg-black px-5 lg:px-8 pb-24">
+<div class="relative max-w-7xl mx-auto rounded-[2rem] overflow-hidden border border-volt/50 text-center px-6 py-20 lg:py-28" style="background:radial-gradient(ellipse at 50% 0%,rgba(0,102,255,.4),#000 70%)">
+<h2 class="text-3xl lg:text-6xl font-bold tracking-tight max-w-3xl mx-auto">Upgrade your home with smart technology</h2>
+<p class="mt-5 text-white/70">Talk to our team on WhatsApp or visit your nearest Melsha store.</p>
+<div class="mt-10 flex flex-wrap justify-center gap-4">
+<a href="https://wa.me/251907353535?text=Hello%20Melsha%20Electronics%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn btn-blue px-8 py-4 rounded-full">Order via WhatsApp</a>
+<a href="tel:+251907353535" class="btn btn-line px-8 py-4 rounded-full">Call 0907353535</a>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-white text-black py-24 lg:py-32">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14">
+<div class="reveal">
+<h2 class="text-3xl lg:text-5xl font-bold tracking-tight">Contact us</h2>
+<div class="mt-8 space-y-6">
+<div><p class="text-sm text-black/50">Phone</p><a href="tel:+251907353535" class="font-display text-xl font-semibold hover:text-volt">0907353535</a></div>
+<div><p class="text-sm text-black/50">WhatsApp</p>
+<div class="flex flex-wrap gap-x-6 gap-y-1"><a href="https://wa.me/251907353535" target="_blank" rel="noopener" class="font-display text-xl font-semibold hover:text-volt">0907353535</a><a href="https://wa.me/251904166666" target="_blank" rel="noopener" class="font-display text-xl font-semibold hover:text-volt">0904166666</a></div></div>
+<div><p class="text-sm text-black/50">Stores</p><p class="font-medium">Jemo, Besides Sisters Cafe<br>Piyasa, Eliana Mall<br>Dessie, Ethiopia</p></div>
+<div><p class="text-sm text-black/50">TikTok</p><a href="https://www.tiktok.com/@melsha_electronics_" target="_blank" rel="noopener" class="font-medium hover:text-volt">@melsha_electronics_</a></div>
+</div>
+<div class="flex flex-wrap gap-3 mt-8">
+<a href="tel:+251907353535" class="btn btn-blue px-6 py-3 rounded-full">Call Now</a>
+<a href="https://wa.me/251907353535?text=Hello%20Melsha%20Electronics%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn bg-black text-white px-6 py-3 rounded-full">WhatsApp 0907353535</a>
+<a href="https://wa.me/251904166666?text=Hello%20Melsha%20Electronics%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn bg-black text-white px-6 py-3 rounded-full">WhatsApp 0904166666</a>
+</div>
+</div>
+<form id="cf" class="reveal space-y-4" novalidate>
+<div class="grid sm:grid-cols-2 gap-4">
+<div><label for="fn" class="text-sm text-black/60">Full name</label><input id="fn" required class="mt-1 w-full px-4 py-3 rounded-xl !bg-white !text-black !border-black/20"></div>
+<div><label for="fp" class="text-sm text-black/60">Phone number</label><input id="fp" type="tel" required class="mt-1 w-full px-4 py-3 rounded-xl !bg-white !text-black !border-black/20"></div>
+</div>
+<div><label for="fs" class="text-sm text-black/60">Nearest store</label><select id="fs" class="mt-1 w-full px-4 py-3 rounded-xl !bg-white !text-black !border-black/20"><option>Jemo</option><option>Piyasa (Eliana Mall)</option><option>Dessie</option></select></div>
+<div><label for="fc" class="text-sm text-black/60">Product</label><select id="fc" class="mt-1 w-full px-4 py-3 rounded-xl !bg-white !text-black !border-black/20"></select></div>
+<div><label for="fm" class="text-sm text-black/60">Message</label><textarea id="fm" rows="4" class="mt-1 w-full px-4 py-3 rounded-xl !bg-white !text-black !border-black/20"></textarea></div>
+<p id="ferr" class="text-sm text-volt hidden" role="alert">Please enter your name and phone number.</p>
+<button class="btn btn-blue w-full sm:w-auto px-10 py-4 rounded-full">Send on WhatsApp</button>
+</form>
+</div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-black border-t border-white/10 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 grid sm:grid-cols-2 lg:grid-cols-5 gap-10">
+<div class="lg:col-span-2"><p class="font-display font-bold text-xl">Melsha<span class="text-volt">.</span> <span class="font-light text-white/70">Electronics</span></p><p class="mt-4 text-sm text-white/60 max-w-xs">Smart Technology. Better Living. Genuine electronics and home appliances in Addis Ababa and Dessie.</p>
+<a href="https://wa.me/251907353535?text=Hello%20Melsha%20Electronics%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="btn btn-blue inline-block mt-6 px-6 py-3 rounded-full">Chat on WhatsApp</a></div>
+<div><p class="font-display font-semibold mb-4">Categories</p><ul id="fcats" class="space-y-2 text-sm text-white/60"></ul></div>
+<div><p class="font-display font-semibold mb-4">Quick links</p><ul class="space-y-2 text-sm text-white/60"><li><a class="hover:text-white" href="#products">Products</a></li><li><a class="hover:text-white" href="#brands">Brands</a></li><li><a class="hover:text-white" href="#locations">Locations</a></li><li><a class="hover:text-white" href="#reviews">Reviews</a></li><li><a class="hover:text-white" href="#contact">Contact</a></li></ul></div>
+<div><p class="font-display font-semibold mb-4">Contact</p><ul class="space-y-2 text-sm text-white/60"><li><a href="tel:+251907353535" class="hover:text-white">0907353535</a></li><li><a href="https://wa.me/251904166666" target="_blank" rel="noopener" class="hover:text-white">WhatsApp 0904166666</a></li><li>Jemo, Besides Sisters Cafe</li><li>Piyasa, Eliana Mall</li><li>Dessie, Ethiopia</li><li><a href="https://www.tiktok.com/@melsha_electronics_" target="_blank" rel="noopener" class="hover:text-white">TikTok</a></li></ul></div>
+</div>
+<p class="mt-14 text-center text-xs text-white/40">&copy; <span id="yr"></span> Melsha Electronics. All rights reserved.</p>
+</footer>
+
+<!-- Product modal -->
+<dialog id="pm" aria-labelledby="pmT">
+<div class="grid md:grid-cols-2">
+<div class="pic min-h-[260px]" id="pmImg"></div>
+<div class="p-8 flex flex-col">
+<button id="pmX" class="self-end text-2xl leading-none" aria-label="Close">&times;</button>
+<h3 id="pmT" class="text-2xl font-semibold"></h3>
+<ul id="pmF" class="mt-4 space-y-2 text-sm text-white/70"></ul>
+<a id="pmW" href="#" target="_blank" rel="noopener" class="btn btn-blue mt-8 text-center px-6 py-4 rounded-full">Order via WhatsApp</a>
+</div></div>
+</dialog>
+
+<!-- Floating -->
+<div class="fixed right-4 bottom-4 z-40 flex flex-col gap-3 items-end">
+<button id="toTop" class="w-12 h-12 rounded-full glass grid place-items-center opacity-0 pointer-events-none transition" aria-label="Back to top"><svg width="18" height="18" fill="none" stroke="#fff" stroke-width="2"><path d="M9 15V3M3 8l6-6 6 6"/></svg></button>
+<div id="waMenu" class="hidden glass rounded-2xl p-3 bg-black/90 w-56">
+<a href="https://wa.me/251907353535?text=Hello%20Melsha%20Electronics%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="block px-4 py-3 rounded-xl hover:bg-volt/30 text-sm">WhatsApp 0907353535</a>
+<a href="https://wa.me/251904166666?text=Hello%20Melsha%20Electronics%2C%20I%20would%20like%20more%20information%20about%20your%20products." target="_blank" rel="noopener" class="block px-4 py-3 rounded-xl hover:bg-volt/30 text-sm">WhatsApp 0904166666</a>
+</div>
+<a href="tel:+251907353535" class="btn w-14 h-14 rounded-full bg-black border border-volt grid place-items-center" aria-label="Call Melsha Electronics"><svg width="22" height="22" fill="none" stroke="#fff" stroke-width="1.8" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></a>
+<button id="waBtn" class="btn w-14 h-14 rounded-full bg-volt grid place-items-center shadow-[0_0_30px_rgba(0,102,255,.6)]" aria-label="Chat on WhatsApp" aria-expanded="false" aria-controls="waMenu"><svg width="26" height="26" fill="#fff" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.600 15L2 22l5.200-1.400A10 10 0 1 0 12 2zm5.200 14.200c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.4.600c-.1.200-.3.300-.1.600.6 1 1.400 1.800 2.400 2.300.3.100.4.100.6-.1l.7-.9c.2-.2.400-.2.600-.1l1.900.9c.3.100.4.200.5.300.1.300.1.900-.1 1.500z"/></svg></button>
+</div>
+
+<script>
+const LOADER_MS=3000;
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const IMG=(id,w=900)=>`https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+const MSG='Hello Melsha Electronics, I would like more information about your products.';
+const wa=(t,n='251907353535')=>`https://wa.me/${n}?text=`+encodeURIComponent(t);
+const fb='<svg class="fb" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.500"/><path d="M8 20h8M12 16v4"/></svg>';
+const pic=(src,alt,cls='aspect-[4/3]')=>`<div class="pic ${cls}">${fb}<img src="${src}" alt="${alt}" loading="lazy" onerror="this.remove()"></div>`;
+
+const feat=[
+["Smart Refrigerator",["Inverter compressor","Smart no-frost cooling","Energy saving"],"photo-1571175443880-49e1d25b2bc5"],
+["Front Load Washing Machine",["Steam wash","Quiet inverter motor","Multiple programs"],"photo-1626806787461-102c1bfaaea1"],
+["Smart TV",["4K Ultra HD","Streaming apps built in","Slim modern design"],"photo-1593359677879-a4bb92f829d1"],
+["Air Conditioner",["Inverter cooling","Low noise","Fast installation"],"photo-1631545806609-3f5e2c3d3b0a"],
+["Water Dispenser",["Hot and cold water","Safety lock","Compact design"],"photo-1523362628745-0c100150b504"],
+["Electric Oven",["Even heat","Digital timer","Easy-clean interior"],"photo-1585515320310-259814833e62"]];
+$('#feat').innerHTML=feat.map((f,i)=>`<article class="card reveal rounded-3xl overflow-hidden cursor-pointer" tabindex="0" role="button" data-i="${i}" aria-label="View ${f[0]}">${pic(IMG(f[2]),f[0])}<div class="p-6"><h3 class="text-xl font-semibold">${f[0]}</h3><ul class="mt-3 space-y-1.5 text-sm text-white/65">${f[1].map(x=>`<li class="flex gap-2"><span class="text-volt">&#10003;</span>${x}</li>`).join('')}</ul><span class="btn btn-blue inline-block mt-5 px-6 py-2.5 rounded-full">View Details</span></div></article>`).join('');
+const pm=$('#pm');
+function openP(i){const p=feat[i];$('#pmT').textContent=p[0];$('#pmF').innerHTML=p[1].map(x=>`<li class="flex gap-2"><span class="text-volt">&#10003;</span>${x}</li>`).join('');$('#pmImg').innerHTML=fb+`<img src="${IMG(p[2])}" alt="${p[0]}" class="h-full" onerror="this.remove()">`;$('#pmW').href=wa('Hello Melsha Electronics, I would like to order the '+p[0]+'.');pm.showModal()}
+$$('#feat article').forEach(a=>{a.onclick=()=>openP(+a.dataset.i);a.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openP(+a.dataset.i)}}});
+$('#pmX').onclick=()=>pm.close();pm.addEventListener('click',e=>{if(e.target===pm)pm.close()});
+
+const cats=[
+["Refrigerators","Smart, inverter and side-by-side fridges.","photo-1571175443880-49e1d25b2bc5"],
+["Washing Machines","Front and top load, plus dryers.","photo-1626806787461-102c1bfaaea1"],
+["Air Conditioners","Split and inverter cooling.","photo-1631545806609-3f5e2c3d3b0a"],
+["Televisions","4K and smart TVs in every size.","photo-1593359677879-a4bb92f829d1"],
+["Kitchen Appliances","Stoves, ovens, microwaves and more.","photo-1556909114-f6e7ad7d3136"],
+["Water Dispensers","Hot and cold, home and office.","photo-1523362628745-0c100150b504"],
+["Freezers","Chest and upright deep freezers.","photo-1584568694244-14fbdf83bd30"],
+["Audio Systems","Home theatre, soundbars and speakers.","photo-1545454675-3531b543be5d"]];
+$('#cats').innerHTML=cats.map(c=>`<article class="card reveal rounded-3xl overflow-hidden">${pic(IMG(c[2],700),c[0])}<div class="p-5"><h3 class="text-lg font-semibold">${c[0]}</h3><p class="mt-1.5 text-sm text-white/60">${c[1]}</p><a href="${wa('Hello Melsha Electronics, I would like to know about your '+c[0]+'.')}" target="_blank" rel="noopener" class="inline-block mt-4 text-sm text-volt font-medium hover:underline">Explore</a></div></article>`).join('');
+const all=["Refrigerators","Deep Freezers","Washing Machines","Dryers","Air Conditioners","Water Dispensers","Electric Stoves","Gas Stoves","Ovens","Microwaves","Kitchen Appliances","Televisions","Audio Systems","Home Electronics","Smart Home Devices"];
+$('#chips').innerHTML=all.map(a=>`<a class="chip glass rounded-full px-5 py-2 text-sm" target="_blank" rel="noopener" href="${wa('Hello Melsha Electronics, I would like to know about your '+a+'.')}">${a}</a>`).join('');
+$('#fcats').innerHTML=all.slice(0,8).map(a=>`<li>${a}</li>`).join('');
+$('#fc').innerHTML=all.map(a=>`<option>${a}</option>`).join('');
+
+$('#brandGrid').innerHTML=["Samsung","LG","Sony","Bosch","Hisense","Haier","Midea","Toshiba"].map(b=>`<div class="brand card reveal rounded-2xl h-28 grid place-items-center"><span class="font-display font-bold text-xl tracking-tight">${b}</span></div>`).join('');
+
+const ic=p=>`<svg width="26" height="26" fill="none" stroke="#0066FF" stroke-width="1.6" viewBox="0 0 24 24">${p}</svg>`;
+const why=[
+["Genuine Products","Authentic, sealed products from the manufacturer.",'<path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/>'],
+["Manufacturer Warranty","Warranty coverage on every product.",'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/>'],
+["Professional Installation","Trained technicians set up your appliance.",'<path d="M14 6l4 4-9 9H5v-4z"/><path d="M13 7l4 4"/>'],
+["Competitive Prices","Fair prices and clear quotes.",'<circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.500 9.500c0-1 1-1.500 2.500-1.500s2.500.7 2.500 1.700-1 1.500-2.500 1.800-2.500.8-2.500 1.800 1 1.700 2.500 1.700 2.500-.5 2.500-1.500"/>'],
+["Fast Delivery","Quick delivery to your home.",'<path d="M2 6h11v10H2zM13 10h4l3 3v3h-7z"/><circle cx="6" cy="18" r="1.800"/><circle cx="17" cy="18" r="1.800"/>'],
+["Excellent Customer Service","Call or message us before and after you buy.",'<path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1"/><rect x="17" y="13" width="4" height="6" rx="1"/>']];
+$('#whyGrid').innerHTML=why.map(w=>`<div class="card reveal glass rounded-3xl p-8"><div class="w-12 h-12 rounded-2xl bg-volt/10 grid place-items-center">${ic(w[2])}</div><h3 class="mt-5 text-lg font-semibold">${w[0]}</h3><p class="mt-2 text-sm text-white/60">${w[1]}</p></div>`).join('');
+
+const locs=[
+{n:"Jemo",a:"Jemo, Besides Sisters Cafe, Addis Ababa",q:"Sisters Cafe Jemo Addis Ababa Ethiopia"},
+{n:"Piyasa",a:"Piyasa, Eliana Mall, Addis Ababa",q:"Eliana Mall Piyasa Addis Ababa Ethiopia"},
+{n:"Dessie",a:"Dessie, Ethiopia",q:"Dessie Ethiopia"}];
+$('#locTabs').innerHTML=locs.map((l,i)=>`<button role="tab" class="tab btn glass rounded-full px-6 py-2.5" aria-selected="${i===0}" data-i="${i}">${l.n}</button>`).join('');
+function showLoc(i){const l=locs[i];
+$$('#locTabs .tab').forEach((t,k)=>t.setAttribute('aria-selected',k===i));
+$('#locCard').innerHTML=`<p class="text-volt text-sm font-medium">Melsha Electronics</p><h3 class="font-display text-3xl font-bold mt-1">${l.n}</h3><p class="mt-4 text-white/70">${l.a}</p><p class="mt-2 text-white/70">Phone: 0907353535</p><div class="mt-auto pt-8 grid gap-3"><a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(l.q)}" target="_blank" rel="noopener" class="btn btn-blue text-center py-3.5 rounded-full">Get Directions</a><a href="tel:+251907353535" class="btn btn-line text-center py-3.5 rounded-full">Call Store</a><a href="${wa('Hello Melsha Electronics, I would like to visit the '+l.n+' store. Are you open today?')}" target="_blank" rel="noopener" class="btn btn-line text-center py-3.5 rounded-full">WhatsApp This Store</a></div>`;
+$('#locMap').src='https://www.google.com/maps?q='+encodeURIComponent(l.q)+'&output=embed'}
+$$('#locTabs .tab').forEach(t=>t.onclick=()=>showLoc(+t.dataset.i));showLoc(0);
+
+const rev=[
+["Hana Tesfaye","Jemo","I bought a refrigerator and washing machine together. The team explained each model clearly and delivery was fast."],
+["Dawit Alemu","Piyasa","Genuine products with warranty. I compared several shops and Melsha gave me the most honest advice on TVs."],
+["Selamawit Bekele","Dessie","The staff in Dessie helped me choose an air conditioner for my home and installed it the next day."],
+["Yonas Girma","Bole","I ordered a water dispenser and oven over WhatsApp. They replied in minutes and everything arrived as promised."]];
+$('#slides').innerHTML=rev.map(r=>`<figure class="min-w-full p-8 lg:p-14 text-center"><div class="w-16 h-16 mx-auto rounded-full bg-volt grid place-items-center font-display font-semibold text-xl" aria-hidden="true">${r[0].split(' ').map(x=>x[0]).join('')}</div><div class="mt-4 text-volt tracking-widest" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote class="mt-5 text-lg lg:text-2xl leading-relaxed">${r[2]}</blockquote><figcaption class="mt-6 font-medium">${r[0]}<span class="block text-sm text-white/50 font-normal">${r[1]}</span></figcaption></figure>`).join('');
+let cur=0,tm;
+$('#dots').innerHTML=rev.map((_,i)=>`<button class="w-2.5 h-2.5 rounded-full border border-white/50" aria-label="Show review ${i+1}" data-i="${i}"></button>`).join('');
+function go(i){cur=(i+rev.length)%rev.length;$('#slides').style.transform=`translateX(-${cur*100}%)`;$$('#dots button').forEach((d,k)=>d.style.background=k===cur?'#0066FF':'transparent')}
+function auto(){clearInterval(tm);tm=setInterval(()=>go(cur+1),6000)}
+$('#next').onclick=()=>{go(cur+1);auto()};$('#prev').onclick=()=>{go(cur-1);auto()};
+$$('#dots button').forEach(d=>d.onclick=()=>{go(+d.dataset.i);auto()});go(0);auto();
+
+$('#vids').innerHTML=["Smart TV showcase","Fridge and freezer picks","New arrivals in store"].map(v=>`<a href="https://www.tiktok.com/@melsha_electronics_" target="_blank" rel="noopener" class="card reveal rounded-3xl overflow-hidden block group" aria-label="Watch on TikTok: ${v}"><div class="pic aspect-[9/14] grid place-items-center"><div class="relative z-10 w-16 h-16 rounded-full bg-volt grid place-items-center group-hover:scale-110 transition"><svg width="22" height="22" fill="#fff" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><p class="absolute bottom-0 inset-x-0 p-4 text-sm font-medium bg-gradient-to-t from-black to-transparent z-10">${v}</p></div></a>`).join('');
+
+/* nav + scroll */
+const nav=$('#nav'),toTop=$('#toTop');
+function onScroll(){const y=scrollY,s=y>40;
+nav.classList.toggle('bg-black/90',s);nav.classList.toggle('backdrop-blur-xl',s);nav.classList.toggle('shadow-lg',s);
+toTop.style.opacity=y>600?1:0;toTop.style.pointerEvents=y>600?'auto':'none';
+$$('[data-parallax]').forEach(el=>el.style.transform=`translateY(${y*el.dataset.parallax}px)`)}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+toTop.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+const bg=$('#burger'),mb=$('#mobile');
+bg.onclick=()=>{const o=mb.classList.toggle('hidden');bg.setAttribute('aria-expanded',String(!o));nav.classList.add('bg-black/90')};
+$$('#mobile a').forEach(a=>a.onclick=()=>{mb.classList.add('hidden');bg.setAttribute('aria-expanded','false')});
+$('#waBtn').onclick=()=>{const o=$('#waMenu').classList.toggle('hidden');$('#waBtn').setAttribute('aria-expanded',String(!o))};
+
+/* reveal + counters */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);
+const t=+e.target.dataset.count,s=performance.now();(function f(n){const p=Math.min((n-s)/1800,1);e.target.textContent=Math.round(t*(1-Math.pow(1-p,3))).toLocaleString();if(p<1)requestAnimationFrame(f)})(s)}),{threshold:.6});
+$$('[data-count]').forEach(el=>co.observe(el));
+
+/* form -> WhatsApp */
+$('#cf').addEventListener('submit',e=>{e.preventDefault();
+const n=$('#fn').value.trim(),p=$('#fp').value.trim();
+if(!n||!p){$('#ferr').classList.remove('hidden');return}
+$('#ferr').classList.add('hidden');
+window.open(wa(`Hello Melsha Electronics, I would like more information about your products.\nName: ${n}\nPhone: ${p}\nNearest store: ${$('#fs').value}\nProduct: ${$('#fc').value}\nMessage: ${$('#fm').value.trim()||'-'}`),'_blank','noopener')});
+
+$('#yr').textContent=new Date().getFullYear();
+setTimeout(()=>$('#loader').classList.add('done'),LOADER_MS);
+</script>
+</body>
+</html>
